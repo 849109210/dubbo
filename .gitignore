@@ -1,0 +1,9 @@
+# Project exclude paths
+/01-common/target/
+/02-shop-orderService/target/
+/03-shop-userService/target/
+/04-shop-mainUser/target/
+/05-javaFrameService/target/
+/06-annotionTest/target/
+/consumer/target/
+/producter/target/

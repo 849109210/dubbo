@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:dubbo="http://dubbo.apache.org/schema/dubbo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://dubbo.apache.org/schema/dubbo
+        http://dubbo.apache.org/schema/dubbo/dubbo.xsd">
+
+    <!--1.声明服务名称，表示你这个dubbo项目的
+          name:就是服务名称，自定义的，给dubbo框架使用的。 最好是唯一值。
+               推荐使用项目名称
+    -->
+    <dubbo:application name="producter"/>
+    <!--2.声明使用的协议和端口。默认是dubbo， 20880-->
+    <dubbo:protocol name="dubbo" port="20880"></dubbo:protocol>
+    <!--3.暴露服务
+        interface:暴露的接口全限定名称
+        ref: 接口的实现类对象
+        registry：是否使用注册中心，不使用赋值N/A-->
+    <dubbo:service interface="com.zhangjie.service.OrderService"
+                   ref="orderServiceBean"
+                   registry="N/A"></dubbo:service>
+    <!--4.用spring声明bean对象（service的实现类对象）-->
+    <bean id="orderServiceBean" class="com.zhangjie.service.impl.OrderServiceImpl"></bean>
+
+</beans>

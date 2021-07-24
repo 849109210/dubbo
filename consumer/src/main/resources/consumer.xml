@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:dubbo="http://dubbo.apache.org/schema/dubbo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://dubbo.apache.org/schema/dubbo
+        http://dubbo.apache.org/schema/dubbo/dubbo.xsd">
+
+    <!--声明服务名称-->
+    <dubbo:application name="consumer"></dubbo:application>
+    <!--2.引用远程服务
+        interface:要使用的远程服务的接口（全限定名称和提供者的一样）
+        id：dubbo在消费端创建的，接口的代理对象。 id就是代理对象在spring容器中的名称
+            代理作用：
+             1）在消费者向提供者发起请求，类似在浏览器中访问servlet
+             2）把请求的参数进行序列化发送提供者
+             3）接收提供者方法的执行结果， 结果是通过网络传回给消费者的
+             4）对接收的提供者返回结果做反序列化。
+        registry：是否使用注册中心， N/A不使用
+        url:在直连模式中，提供的url地址
+            servlet: http://localhost:8080/myweb/loginServlet
+            dubbo:   dubbo://localhost:20880
+    -->
+    <dubbo:reference interface="com.zhangjie.service.OrderService"
+                     id="remoteOrderService"
+                     registry="N/A"
+                     url="dubbo://localhost:20880"></dubbo:reference>
+</beans>

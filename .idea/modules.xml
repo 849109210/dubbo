@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/01-common/01-common.iml" filepath="$PROJECT_DIR$/01-common/01-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/02-shop-orderService/02-shop-orderService.iml" filepath="$PROJECT_DIR$/02-shop-orderService/02-shop-orderService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/03-shop-userService/03-shop-userService.iml" filepath="$PROJECT_DIR$/03-shop-userService/03-shop-userService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/04-shop-mainUser/04-shop-mainUser.iml" filepath="$PROJECT_DIR$/04-shop-mainUser/04-shop-mainUser.iml" />
+      <module fileurl="file://$PROJECT_DIR$/05-javaFrameService/05-javaFrameService.iml" filepath="$PROJECT_DIR$/05-javaFrameService/05-javaFrameService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/06-annotionTest/06-annotionTest.iml" filepath="$PROJECT_DIR$/06-annotionTest/06-annotionTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/consumer/consumer.iml" filepath="$PROJECT_DIR$/consumer/consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/producter/producter.iml" filepath="$PROJECT_DIR$/producter/producter.iml" />
+    </modules>
+  </component>
+</project>

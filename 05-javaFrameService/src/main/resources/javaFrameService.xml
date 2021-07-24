@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:dubbo="http://dubbo.apache.org/schema/dubbo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://dubbo.apache.org/schema/dubbo
+        http://dubbo.apache.org/schema/dubbo/dubbo.xsd">
+
+    <dubbo:application name="05-javaFrameService"></dubbo:application>
+
+    <!--指定dubbo扫描注解的包-->
+    <dubbo:annotation package="service"></dubbo:annotation>
+
+    <!--指定不适用注册中心-->
+    <dubbo:registry address="N/A"></dubbo:registry>
+</beans>
