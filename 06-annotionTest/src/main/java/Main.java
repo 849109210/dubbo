@@ -11,6 +11,7 @@ public class Main {
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("test.xml");
         TestService testService = (TestService) context.getBean("appService");
         String web = testService.quertFrameName("web");
+        System.out.println("采用注解开发");
         System.out.println(web);
     }
 }
