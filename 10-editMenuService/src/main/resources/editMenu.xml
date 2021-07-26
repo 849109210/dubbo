@@ -7,17 +7,15 @@
         http://dubbo.apache.org/schema/dubbo
         http://dubbo.apache.org/schema/dubbo/dubbo.xsd">
 
-    <dubbo:application name="07-zookeeper-orderService"></dubbo:application>
-
-    <dubbo:protocol name="dubbo" port="20881"></dubbo:protocol>
-
-    <dubbo:service interface="service.MyOrderService"
-                   ref="orderServiceBean" timeout="8000" retries="2"/>
-
-    <dubbo:provider timeout="5000" retries="2"/>
-
-    <bean id="orderServiceBean" class="service.OrderServiceImpl" ></bean>
-
+    <dubbo:application name="editService"/>
+    <dubbo:protocol name="dubbo" port="20883"/>
     <dubbo:registry address="zookeeper://localhost:2181"/>
 
+    <dubbo:service interface="service.MyMenuService"
+                   ref="editBean"
+                   version="2.0.0"/>
+
+    <bean id="editBean" class="com.zhangjie.EditMenuService"/>
+
+    <dubbo:provider timeout="5000" retries="2"/>
 </beans>

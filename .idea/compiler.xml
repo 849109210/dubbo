@@ -9,13 +9,16 @@
         <outputRelativeToContentRoot value="true" />
         <module name="08-zookeeper-mainUser" />
         <module name="06-annotionTest" />
+        <module name="11-userMenu" />
+        <module name="02-shop-orderService" />
         <module name="producter" />
         <module name="01-common" />
         <module name="05-javaFrameService" />
         <module name="04-shop-mainUser" />
         <module name="07-zookeeper-orderService" />
+        <module name="09-fileMenuService" />
+        <module name="10-editMenuService" />
         <module name="03-shop-userService" />
-        <module name="02-shop-orderService" />
         <module name="consumer" />
       </profile>
     </annotationProcessing>
@@ -29,6 +32,9 @@
       <module name="06-annotionTest" target="1.8" />
       <module name="07-zookeeper-orderService" target="1.5" />
       <module name="08-zookeeper-mainUser" target="1.5" />
+      <module name="09-fileMenuService" target="8" />
+      <module name="10-editMenuService" target="8" />
+      <module name="11-userMenu" target="8" />
       <module name="consumer" target="1.5" />
       <module name="producter" target="1.5" />
     </bytecodeTargetLevel>

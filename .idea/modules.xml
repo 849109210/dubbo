@@ -10,6 +10,9 @@
       <module fileurl="file://$PROJECT_DIR$/06-annotionTest/06-annotionTest.iml" filepath="$PROJECT_DIR$/06-annotionTest/06-annotionTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/07-zookeeper-orderService/07-zookeeper-orderService.iml" filepath="$PROJECT_DIR$/07-zookeeper-orderService/07-zookeeper-orderService.iml" />
       <module fileurl="file://$PROJECT_DIR$/08-zookeeper-mainUser/08-zookeeper-mainUser.iml" filepath="$PROJECT_DIR$/08-zookeeper-mainUser/08-zookeeper-mainUser.iml" />
+      <module fileurl="file://$PROJECT_DIR$/09-fileMenuService/09-fileMenuService.iml" filepath="$PROJECT_DIR$/09-fileMenuService/09-fileMenuService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/10-editMenuService/10-editMenuService.iml" filepath="$PROJECT_DIR$/10-editMenuService/10-editMenuService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/11-userMenu/11-userMenu.iml" filepath="$PROJECT_DIR$/11-userMenu/11-userMenu.iml" />
       <module fileurl="file://$PROJECT_DIR$/consumer/consumer.iml" filepath="$PROJECT_DIR$/consumer/consumer.iml" />
       <module fileurl="file://$PROJECT_DIR$/producter/producter.iml" filepath="$PROJECT_DIR$/producter/producter.iml" />
     </modules>

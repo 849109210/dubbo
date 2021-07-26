@@ -7,18 +7,20 @@
         http://dubbo.apache.org/schema/dubbo
         http://dubbo.apache.org/schema/dubbo/dubbo.xsd">
 
-    <dubbo:application name="08-zookeeper-mainUser"/>
-    <!--引用远程服务-->
-    <dubbo:reference interface="service.MyOrderService"
-                     id="remoteMyOrderService"/>
-
-    <!--配置所有消费者的默认值-->
-    <dubbo:consumer timeout="5000" retries="2" check="false"/>
-
-    <bean id="mainServiceImpl" class="service.impl.MainServiceImpl">
-        <property name="myOrderService" ref="remoteMyOrderService"/>
-    </bean>
+    <dubbo:application name="11-userMenu"/>
 
     <dubbo:registry address="zookeeper://localhost:2181"/>
 
+    <!--version必须和提供者一样-->
+    <!--file代理对象-->
+    <dubbo:reference interface="service.MyMenuService"
+                     id="fileService"
+                     version="1.0"
+                     check="false"/>
+
+    <!--edit代理对象-->
+    <dubbo:reference interface="service.MyMenuService"
+                     id="editService"
+                     version="2.0.0"
+                     check="false"/>
 </beans>

@@ -16,6 +16,9 @@
         <option value="$PROJECT_DIR$/07-zookpper-orderService/pom.xml.bak" />
         <option value="$PROJECT_DIR$/08-zookeeper-mainUser/pom.xml" />
         <option value="$PROJECT_DIR$/07-zookeeper-orderService/pom.xml" />
+        <option value="$PROJECT_DIR$/09-fileMenu/pom.xml" />
+        <option value="$PROJECT_DIR$/10-editMenuService/pom.xml" />
+        <option value="$PROJECT_DIR$/11-userMenu/pom.xml" />
       </list>
     </option>
   </component>
