@@ -6,6 +6,6 @@ import model.Menu;
  * 张杰
  * 2021/7/26
  */
-public interface MyMenu {
+public interface MyMenuService {
     Menu ckeckMenu(String name,String description);
 }
