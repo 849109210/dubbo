@@ -12,10 +12,14 @@
         <option value="$PROJECT_DIR$/04-shop-mainUser/pom.xml" />
         <option value="$PROJECT_DIR$/05-javaFrameService/pom.xml" />
         <option value="$PROJECT_DIR$/06-annotionTest/pom.xml" />
+        <option value="$PROJECT_DIR$/07-zookpper-orderService/pom.xml" />
+        <option value="$PROJECT_DIR$/07-zookpper-orderService/pom.xml.bak" />
+        <option value="$PROJECT_DIR$/08-zookeeper-mainUser/pom.xml" />
+        <option value="$PROJECT_DIR$/07-zookeeper-orderService/pom.xml" />
       </list>
     </option>
   </component>
-  <component name="ProjectRootManager">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_15" default="false" project-jdk-name="1.8 (2)" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>
